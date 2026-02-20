@@ -18,7 +18,7 @@ def check_password():
     
     if password:
         if password == ADMIN_PASSWORD:
-            st.sessiaon_state["password_correct"] = True
+            st.session_state["password_correct"] = True
             st.rerun() # 重新整理頁面進入系統
         else:
             st.error("密碼錯誤")
